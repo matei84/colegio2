@@ -1,0 +1,11 @@
+@startsalt clave
+skinparam BackgroundColor palegreen
+{+
+Login | " carlos "
+pawware | " **** "
+[ borrar ] | [ entrar ] 
+}
+
+
+
+@enduml
