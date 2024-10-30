@@ -40,7 +40,7 @@
 
             </div> 
         
-            <div class="container" style="border:2px solid black;">
+            <div class="container" style="margin-top: 50px; border:2px solid black;">
             
                 <table>
                     <thead>
@@ -86,38 +86,52 @@
             <form action="">
                 
                 <div class="container" style="border: 2px solid black; margin-top:50px">
-                    <div class="mb-3"> 
+                    <!-- <div class="mb-3">  -->
 
-                    <label for="nombreEstudiante" style="width: 200px; float: left;">
+                    <label for="nombreEstudiante" style="width: 200px">
                         <span> Nombre del estudiante </span>              
                         <input type="text" id="nombrEstudiante" 
                                 placeholder="Nombre del estudiante" required>
                                 <!-- style="width: 300px; background-color: gray; margin-left:660px; margin-top: -50px" -->
                             
                     </label>
-                    </div>
+                    <!-- </div> -->
                     
-                    <div class="mb-3"> 
-                    <label for="identificacion" style="width: 200px; float: right;">
+                    <!-- <div class="mb-3">  -->
+                    <label for="identificacion" style="width: 200px;">
                         <span>Identificacion</span>              
                         <input type="text" id="identificacion" 
                         placeholder="ID"  required>
                         <!-- style="width: 300px; background-color: gray; margin-left:660px; margin-top: -50px" -->
                         
                     </label>
-                    </div>
+                    <!-- </div> -->
 
-                    <!-- <div class="mb-3"> 
-                    <label for="" class="form-label" style="float:right"> Calificacion </label>
-                    <select name="" id="" style="float:right">
+                    <!-- <div class="mb-3">  -->
+                    <label for="calificacion" style="width: 200px">
+                    <span>Calificacion</span>
+                    <select name="calificacion" id="calificacion" style="float:right">
                         <option value="1"> Apto </option>
                         <option value="2"> No apto </option>
                     </select>
                     </label>
-                    </div> -->
+                    <!-- </div>  class="form-label"  "float:right"-->
 
                 </div>
             </form>
+
+
+            <div class="container" style="border: 2px solid black; margin-top:50px">
+
+                <div> <p> hola</p> </div>
+
+                <div> <p> hola</p> </div>
+
+                <div> <p> hola</p> </div>
+
+            </div>
+
+            
 
                 <!-- <div class="mb-3"> -->
                     <!-- <label for="" class="form-label" style="width: 200px; float: right; margin-top: 80px; margin-right: 400px"> Nombre del estudiante </label>
