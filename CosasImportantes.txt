@@ -1,0 +1,2 @@
+Cosas de github: https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos
+
