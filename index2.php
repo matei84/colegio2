@@ -16,6 +16,10 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
+        <script src="js/login.js"></script>
+        
+
     </head>
 
     <body style="background-image:url(img/colegio1.jpg); background-size: 100%; background-repeat:no-repeat">
@@ -24,48 +28,45 @@
             <!-- place navbar here -->
         </header>
         <main>
-            <div 
-            class="container d-flex justify-content-center"
-            style="border 2px solid black; border-radius 20px";
-            >
 
-            <!-- <div 
-                class="container d-flex justify-content-center"
-                style="margin-top:200px;margin-left:500px;"> -->
+            <div class="container d-flex justify-content-center" style="border 2px solid black; border-radius 20px">
 
-            <form action="">
+            <form action="" name="login_form" method="post">
 
-            <div class="mb-3">
-                <label for="" class="form-label"> Usuario </label>
-                <input
-                    type="text"
-                    class="form-control"
-                    name=""
-                    id=""
-                    aria-describedby="helpId"
-                    placeholder=""
-                    style="width:300px"
-                />
-                <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
-            </div>
+                <div class="mb-3">
+                    <label for="" class="form-label"> Usuario </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="usuario"
+                        id="usuario"
+                        aria-describedby="helpId"
+                        placeholder=""
+                        style="width:300px"
+                    />
+
+                </div>
             
-            <div class="mb-3">
-                <label for="" class="form-label">Clave</label>
-                <input
-                    type="text"
-                    class="form-control"
-                    name=""
-                    id=""
-                    aria-describedby="helpId"
-                    placeholder=""
-                />
-                <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
-            </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Clave</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="password"
+                        id="password"
+                        aria-describedby="helpId"
+                        placeholder=""
+                    />
+    
+                </div>
 
-            <a href="">Olvido su clave?</a>
-            
-            <button type="button" class="btn btn-danger"> Entrar </button>
-            <button type="button" class="btn btn-danger"> Borrar </button>
+                <a href="">Olvido su clave?</a>
+                
+                <button type="button" class="btn btn-danger" onclick="return Login(this.form)"> Entrar </button>
+                                
+                <input type="reset" value="Borrar" class="btn btn-danger" />
+
+            </form>
              
 
         </main>

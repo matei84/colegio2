@@ -82,7 +82,6 @@
                 <thead>
                 <!-- style="text-align:center" -->
                     <tr>
-                        <!-- <th id= "total">HOLA</th> -->
                         <th><span style="font-size:20px">TOTAL</span></th>
                         <th><h4 id= "total"></h4></th>
                     </tr>

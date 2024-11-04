@@ -118,20 +118,7 @@
                     <!-- </div>  class="form-label"  "float:right"-->
 
                 </div>
-            </form>
-
-
-            <div class="container" style="border: 2px solid black; margin-top:50px">
-
-                <div> <p> hola</p> </div>
-
-                <div> <p> hola</p> </div>
-
-                <div> <p> hola</p> </div>
-
-            </div>
-
-            
+            </form>          
 
                 <!-- <div class="mb-3"> -->
                     <!-- <label for="" class="form-label" style="width: 200px; float: right; margin-top: 80px; margin-right: 400px"> Nombre del estudiante </label>
