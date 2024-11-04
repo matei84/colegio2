@@ -1,0 +1,10 @@
+@staruml enlaces
+
+[*] --> Login
+Login : Clave
+
+state ENLACE{
+
+    PROFESOR : CON RESTRICCION
+    SECRETARIA : ALGUNAS RES
+}
