@@ -1,2 +1,7 @@
 Cosas de github: https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos
 
+Para descargar las cosas que he realizado de github: git pull colegio2 main
+
+Para saber cuales son mis conexiones remotas de github: git remote -v
+
+Para eliminar github remoto: git remote rm origin (donde origin es desde donde me conecto del remoto)
