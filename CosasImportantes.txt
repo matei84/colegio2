@@ -5,3 +5,9 @@ Para descargar las cosas que he realizado de github: git pull colegio2 main
 Para saber cuales son mis conexiones remotas de github: git remote -v
 
 Para eliminar github remoto: git remote rm origin (donde origin es desde donde me conecto del remoto)
+
+Para entrar al xampp-localhost: http://localhost/ProyectoColegio-main/
+
+Web del profe: https://carloslopezformador.com/ -->ir al aula 5 y user: ingenieria clave:1234
+--> una vez que metemos el user y password.
+
