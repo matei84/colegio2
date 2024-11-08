@@ -34,8 +34,6 @@
         <footer>
             <?php 
             include 'log/footer.php';
-            // include 'log/footer.php';
-            // include 'log/modal.php';
             ?>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->

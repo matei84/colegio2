@@ -28,52 +28,56 @@
         </header>
         <main>
 
-        <div class="container" style="border: 2px solid black;">
-                        
-            <form action="">
-                <div>
-                <label for="nombre">
-                    <span>Nombre</span>              
-                    <input type="text" id="nombre" placeholder="Nombre del profesor" required>
-                </label>
-                </div>
+        <form action="">
 
-                <div>
-                <label for="curso">
-                    <span>Nombre del Curso</span>              
-                    <input type="text" id="curso" placeholder="Nombre del curso" required>
-                </label>
-                </div>
+            <div class="container" style="border: 2px solid black; margin-top: 50px;">
                 
-                <div>
-                <label for="horario">
-                    <span>Horario</span>              
-                    <input type="text" id="horario" placeholder="Horario del curso" required>
-                </label>
-                </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="nombreProfesor" class="form-label">Nombre del Profesor</label>
+                            <input type="text" class="form-control" id="nombreProfe" aria-describedby="" required>
+                        </div>
+                        <div class="col">
+                            <label for="apellidoProfesor" class="form-label">Apellido del Profesor</label>
+                            <input type="text" class="form-control" id="apellidoProfe" required>
+                        </div>
+                    </div>
 
-                <div>
-                <label for="telefono">
-                    <span>Telefono</span>              
-                    <input type="text" id="telefono" placeholder="telefono" required>
-                </label>
-                </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="nombreAsignatura" class="form-label">Nombre de la Asignatura</label>
+                            <input type="text" class="form-control" id="asignatura" required>
+                        </div>
+                        <div class="col">
+                            <label for="horarioCurso" class="form-label">Horario del Curso</label>
+                            <input type="text" class="form-control" id="horarioCurso" required>
+                        </div>
+                    </div>
 
-                <input type="submit" value="NOMBRE">
-
-                <button type="submit">Intro</button>
-
-               
-
-            </form>
-        
-        </div>    
+                    <div class="row">
+                        <div class="col">
+                            <label for="identificadorProfe" class="form-label">Identificador del Profesor</label>
+                            <input type="text" class="form-control" id="identificadorProfe" required>
+                        </div>
                         
-        
+                        <div class="col">
+                            <label for="telefProfesor" class="form-label">Telefono del Profesor</label>
+                            <input type="text" class="form-control" id="telefProfesor" required>
+                        </div>
+                    </div>
+                        
+                            <button type="submit" class="btn btn-primary">Submit</button>
+
+                            <input type="reset" class="btn btn-primary" value="Reset" />
+                    
+            </div>
+
+        </form>
+
+
         </main>
         <footer>
-            <?php 
-            include 'log/footer.php';?>
+            <?php include 'log/footer.php';?>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script

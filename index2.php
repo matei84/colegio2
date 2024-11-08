@@ -34,7 +34,7 @@
             <form action="" name="login_form" method="post">
 
                 <div class="mb-3">
-                    <label for="" class="form-label"> Usuario </label>
+                    <label for="" class="form-label" style="color: white;" > Usuario </label>
                     <input
                         type="text"
                         class="form-control"
@@ -48,7 +48,7 @@
                 </div>
             
                 <div class="mb-3">
-                    <label for="" class="form-label">Clave</label>
+                    <label for="" class="form-label" style="color: white;" >Clave</label>
                     <input
                         type="text"
                         class="form-control"
@@ -59,8 +59,11 @@
                     />
     
                 </div>
-
-                <a href="">Olvido su clave?</a>
+                
+                <div>
+                    <a href="" style="color: red;" >Olvido su clave?</a>
+                
+                </div>
                 
                 <button type="button" class="btn btn-danger" onclick="return Login(this.form)"> Entrar </button>
                                 
