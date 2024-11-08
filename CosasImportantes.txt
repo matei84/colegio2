@@ -1,2 +1,20 @@
 Cosas de github: https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos
 
+Para desarrollar en html: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+Abrir Xampp desde linux: sudo /opt/lampp/lampp o sudo /opt/lampp/manager-linux-x64.run
+
+Eliminar directorio: sudo rm -r directory
+
+En mi local tengo los siguientes proyectos (Hay que abrirlos despues de encender el Xampp):
+
+http://localhost/academia-main/ --> el del profe
+
+http://localhost/colegio2-main/ --> Mas adelantado y en mejor uso.
+
+http://localhost/ProyectoColegio/
+
+
+
+
+
