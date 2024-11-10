@@ -19,8 +19,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <script src:"js/funciones.js"></script>
-
+        <script src="js/funciones.js"></script>
 
     </head>
 
@@ -39,128 +38,90 @@
                 <button type="button" class="btn btn-primary">IFC2367</button>
 
             </div> 
+
+            <form action="insertar.php" method="post">
         
-            <div class="container" style="margin-top: 50px; border:2px solid black;">
-            
-                <table>
-                    <thead>
-                            <tr>
-                                <th scope="col"> Modulos </th>
-                                <th scope="col"> Hora Modulos </th>
-                                <th scope="col"> Nota Final </th>
+                <div class="container" style="margin-top: 50px; border:2px solid black;">
+                
+                    <table>
+                        <thead>
+                                <tr>
+                                    <th scope="col"> Modulos </th>
+                                    <th scope="col"> Hora Modulos </th>
+                                    <th scope="col"> Nota Final </th>
+                                </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="table table-primary">
+                                <td scope="row"> MF0950_2: Construccion de paginas web </td>
+                                <td> 210 Horas </td>
+                                <td id="nota1" name="nota1"> Nota por asignar </td>
                             </tr>
-                    </thead>
 
-                    <tbody>
-                        <tr class="table table-primary">
-                            <td scope="row"> MF0950_2: Construccion de paginas web </td>
-                            <td> 120 </td>
-                            <td id="demo1"> FALTA ALGO ACA </td>
-                        </tr>
+                            <tr class="table table-primary">
+                                <td scope="row"> MF0951_2: Integracion componentes de software </td>
+                                <td> 180 Horas </td>
+                                <td id="nota2" name="nota2"> Nota por asignar </td>
+                            </tr>
 
-                        <tr class="table table-primary">
-                            <td scope="row"> MF0951_2: Integracion componentes de software </td>
-                            <td> 120 </td>
-                            <td id="demo1"> FALTA ALGO ACA </td>
-                        </tr>
+                            <tr class="table table-primary">
+                                <td scope="row"> MF0952_2: Publicacion de paginas Web: </td>
+                                <td> 90 Horas </td>
+                                <td id="nota3" name="nota3"> Nota por asignar </td>
+                            </tr>
+                        </tbody>
 
-                        <tr class="table table-primary">
-                            <td scope="row"> MF0951_2: Publicacion de paginas Web: </td>
-                            <td> 120 </td>
-                            <td id="demo1"> FALTA ALGO ACA </td>
-                        </tr>
-                    </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row" colspan="2">Nota Promedio</th>
+                                <td id="">                         
+                                    <input type="text" name="nota" id="nota" required>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                
+                    <button type="button" class="btn btn-primary" onclick="calculoNotas()">Calculo de Notas</button>
 
-                    <tfoot>
-                        <tr>
-                            <th scope="row" colspan="2">Nota Promedio</th>
-                            <td>POR CALCULAR</td>
-                            
-                        </tr>
-                    
-                    </tfoot>
-                </table>
-            
-            </div>
-
-            <form action="">
+                    <button type="button" class="btn btn-primary" onclick="ResetNotas()"> Borrar </button> 
+                </div>
                 
                 <div class="container" style="border: 2px solid black; margin-top:50px">
-                    <!-- <div class="mb-3">  -->
 
                     <label for="nombreEstudiante" style="width: 200px">
                         <span> Nombre del estudiante </span>              
-                        <input type="text" id="nombrEstudiante" 
+                        <input type="text" name="nombre"  id="nombrEstudiante" 
                                 placeholder="Nombre del estudiante" required>
-                                <!-- style="width: 300px; background-color: gray; margin-left:660px; margin-top: -50px" -->
-                            
+                                  
                     </label>
-                    <!-- </div> -->
-                    
-                    <!-- <div class="mb-3">  -->
+
                     <label for="identificacion" style="width: 200px;">
                         <span>Identificacion</span>              
-                        <input type="text" id="identificacion" 
+                        <input type="text" name="identificacion" id="identificacion" 
                         placeholder="ID"  required>
-                        <!-- style="width: 300px; background-color: gray; margin-left:660px; margin-top: -50px" -->
                         
                     </label>
-                    <!-- </div> -->
 
-                    <!-- <div class="mb-3">  -->
                     <label for="calificacion" style="width: 200px">
                     <span>Calificacion</span>
-                    <select name="calificacion" id="calificacion" style="float:right">
-                        <option value="1"> Apto </option>
-                        <option value="2"> No apto </option>
+                    <select style="float:right" name="cualificacionFinal" id="cualificacionFinal">
+                        <option value="Aprobado"> Aprobado </option>
+                        <option value="Suspenso"> Suspenso </option>
+                        <option value="Notable"> Notable </option>
+                        <option value="Sobresaliente"> Sobresaliente </option>
                     </select>
                     </label>
-                    <!-- </div>  class="form-label"  "float:right"-->
 
+                    <input type="submit" class="btn btn-primary" name= "submit" value="Guardar" >
+
+                    <input type="reset" class="btn btn-primary" value="Reset" />
+
+                    <!-- <button type="button" class="btn btn-primary" value="Reset"> Borrar </button>  -->
                 </div>
-            </form>          
 
-                <!-- <div class="mb-3"> -->
-                    <!-- <label for="" class="form-label" style="width: 200px; float: right; margin-top: 80px; margin-right: 400px"> Nombre del estudiante </label>
-                    <input
-                        type="text"
-                        class="form-control"
-                        name=""
-                        id=""
-                        aria-describedby="helpId"
-                        placeholder=""
-                        style="width: 300px; background-color: gray; margin-left:660px; margin-top: -50px"/>
-
-                    <label for="" class="form-label" style="width: 200px; float: right; margin-top: 80px; margin-right: 400px"> Identificacion </label>
-                    <input
-                        type="text"
-                        class="form-control"
-                        name=""
-                        id=""
-                        aria-describedby="helpId"
-                        placeholder=""
-                        style="width: 300px; background-color: gray; margin-left:660px; margin-top: -50px"/> -->
-                    <!-- </div> -->
-
-        <!-- <div class="mb-3">
-            <label for="" class="form-label" style="float:right"> Calificacion </label>
-            <select name="" id="" style="float:right">
-                <option value="1"> Apto </option>
-                <option value="2"> No apto </option>
-
-            </select>
-
-        </div> -->
-
-
-
-
-
-    <!-- <button type="button" class="btn btn-primary"> Guardar </button>
-
-    <button type="button" class="btn btn-primary"> Borrar </button>  -->
-
-      
+            </form>
+           
         </main>
         <footer>
             <?php 
@@ -179,10 +140,6 @@
             crossorigin="anonymous"
         ></script>
 
-
     </body>
 
 </html>
-
-
-

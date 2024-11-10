@@ -16,7 +16,7 @@ function calculoNotas(){
     resultado= (nota1 + nota2 + nota3)/3;
     resultado= resultado.toFixed(2)
 
-    document.getElementById("calificacion").value = resultado;
+    document.getElementById("nota").value = resultado;
     
 }
 
@@ -26,6 +26,6 @@ function ResetNotas(){
     document.getElementById("nota1").innerText = "Nota por asignar";
     document.getElementById("nota2").innerText = "Nota por asignar";
     document.getElementById("nota3").innerText = "Nota por asignar";
-    document.getElementById("calificacion").value = "";
+    document.getElementById("nota").value = "";
 
 }

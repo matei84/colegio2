@@ -2,9 +2,9 @@
 
 Paginas sobre cosas de github, en particular sobre github remotos: https://git-scm.com/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos
 
-Para descargar las cosas que he realizado de github: git pull colegio2 main (el primer termino para conocer desde que repositorio se descarga la info y el segundo termino para saber desde que branch de ese repositorio).
+Para descargar las cosas que he realizado de github: git pull colegio2-main main (el primer termino para conocer desde que repositorio se descarga la info y el segundo termino para saber desde que branch de ese repositorio).
 
-Para subir las cosas que he realizado desde local: git push colegio2 main (el primer termino para conocer hacia que repositorio se sube la info y el segundo termino para saber a que branch de ese repositorio va la info).
+Para subir las cosas que he realizado desde local: git push colegio2-main main (el primer termino para conocer hacia que repositorio se sube la info y el segundo termino para saber a que branch de ese repositorio va la info).
 
 Para saber cuales son mis conexiones remotas de github: git remote -v
 
@@ -29,7 +29,8 @@ Eliminar directorio: sudo rm -r directory
 
 
                                                 XAMPP
-Para entrar al xampp-localhost: http://localhost/ProyectoColegio-main/
+Para entrar al xampp-localhost: http://localhost/colegio2-main/
+Para entrar al xampp-Base de datos: http://localhost/phpmyadmin/
 
 
 
