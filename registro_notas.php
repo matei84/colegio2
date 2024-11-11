@@ -39,7 +39,7 @@
 
             </div> 
 
-            <form action="insertar.php" method="post">
+            <form action="insertar_notas.php" method="post">
         
                 <div class="container" style="margin-top: 50px; border:2px solid black;">
                 

@@ -85,8 +85,8 @@
                             class="dropdown-menu"
                             aria-labelledby="dropdownId"
                         >
-                            <a class="dropdown-item" href="#"
-                                >Action 1</a
+                            <a class="dropdown-item" href="libroDiarioContable.php"
+                                >Libro diario Contable</a
                             >
                             <a class="dropdown-item" href="#"
                                 >Action 2</a

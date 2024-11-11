@@ -3,14 +3,6 @@ CREATE DATABASE instituto;
 
 use instituto;
 
--- CREATE TABLE alumnos_notas(
---   id INT AUTO_INCREMENT PRIMARY KEY,
---   nombre VARCHAR(50),
---   identificacion VARCHAR(5),
---   nota INT(2),
---   cualificacionFinal BOOLEAN
---   );
-
 CREATE TABLE alumnos_nota (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(30) NOT NULL,
@@ -20,6 +12,23 @@ CREATE TABLE alumnos_nota (
     INDEX idx_nombre (nombre),                 -- Crear índice para consultas por nombre --> sugerengia gemini
     INDEX idx_identificacion (identificacion) 
 );
+
+CREATE TABLE contabilidadInstituto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fechas DATE DEFAULT CURRENT_DATE, 
+    bankingAccount VARCHAR(20) NOT NULL,
+    debe VARCHAR(20) NOT NULL,
+    haber VARCHAR(20) NOT NULL
+);
+
+-- INSERT INTO usuarios (id, nombre, email, fecha_registro) 
+-- VALUES (NULL, "Juan", "juan@ejemplo.com", NOW()); CURDATE()
+
+
+
+
+
+
 
 select *
 FROM alumnos_notas;

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Factura LEO </title>
+        <title> Facturacion </title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta

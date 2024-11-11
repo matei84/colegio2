@@ -24,7 +24,11 @@
 
     <body>
         <header>
-            <?php include 'log/header.php';?>
+            <?php 
+            
+            include 'log/header.php';
+            
+            ?>
             
         </header>
         <main>

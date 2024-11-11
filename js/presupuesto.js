@@ -136,3 +136,34 @@ let id = generateUUID();
 document.getElementById('idHeader').innerText = generateUUID();
 // Ejecutar la función cuando se carga la página
 window.onload = setCurrentDate;
+
+function addAccountingEntry() {
+   
+    const bankingAccount = prompt("Ingrese la cuenta bancaria:");
+    const debe = parseFloat(prompt("Ingrese el debe:")).toFixed(2);
+    const haber = parseFloat(prompt("Ingrese el haber:")).toFixed(2);
+    const fechaActual = new Date();
+    const dia = fechaActual.getDate();
+    const mes = fechaActual.getMonth() + 1;
+    const año = fechaActual.getFullYear();
+    const fechas = (`${dia}/${mes}/${año}`);
+
+    if (bankingAccount && !isNaN(debe) && !isNaN(haber)) {
+        const table = document.getElementById('LibroDiario').getElementsByTagName('tbody')[0];
+        const newRow = table.insertRow();
+
+        newRow.innerHTML = `
+            <td>${fechas}</td>
+            <td><input type="text" name="cuentas" id="cuentas" 
+                        placeholder="ID"  value="${bankingAccount}" required></td>
+            <td><input type="text" name="debe" id="debe" 
+                        placeholder="ID"  value="$${debe}" required></td>
+            <td><input type="text" name="haber" id="haber" 
+                        placeholder="ID"  value="$${haber}" required></td>
+        `;
+
+        updateTotal(); // Actualiza el total al añadir un nuevo producto
+    } else {
+        alert("Por favor, asegúrese de ingresar datos válidos.");
+    }
+}
