@@ -13,7 +13,7 @@ Para eliminar github remoto: git remote rm origin (donde origin es desde donde m
 Resolver conflictos de merge (tipico cuando se descarga cosas desde el remoto): https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line
 
 Para descargar un single file de github, hay que ir al github al documento especifico a descargar, ir a la seccion de raw y luego usar wget l- para un ejemplo: wget -L https://raw.githubusercontent.com/arodriguezpaz00/proyecto3/refs/heads/main/facturacion.php
-
+ 
 
                                                 FRONTEND:
 
@@ -47,4 +47,18 @@ http://localhost/ProyectoColegio/
 Web del profe: https://carloslopezformador.com/ -->ir al aula 5 y user: ingenieria clave:1234
 --> una vez que metemos el user y password.
 
+header: Home y 4 mas:
+Registro de estudiantes y profesores en base de datos --> datos personales
 
+Secretaria: Area de ventas(recibo que guarde los vouchers en BD)
+
+Docente: Solo registro de notas
+
+Administracion: Facturacion
+
+usuario: entrar en un panel de control (panel de control independiente):
+Auditoria: Libro de diario, estado de resultados y ventas
+
+estado de resultados --> buscar uno en la web 
+
+Estudiantes un crud de la tabla de estudiantes

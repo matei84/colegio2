@@ -2,13 +2,10 @@
 <html lang="en">
     <head>
         <title>Registro Profesores</title>
-        <!-- Required meta tags -->
         <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-
         <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -28,47 +25,87 @@
         </header>
         <main>
 
-        <form action="">
-
-            <div class="container" style="border: 2px solid black; margin-top: 50px;">
+        <form action="insertar_registro_profesores.php" method="POST">
+            <h1 style="text-align:center">Registro de Profesores</h1>
+            <div class="container mt-5">
                 
                     <div class="row">
                         <div class="col">
                             <label for="nombreProfesor" class="form-label">Nombre del Profesor</label>
-                            <input type="text" class="form-control" id="nombreProfe" aria-describedby="" required>
+                            <input type="text" class="form-control" id="nombreProfe"
+                            name="nombreProfe" aria-describedby="" required>
                         </div>
                         <div class="col">
                             <label for="apellidoProfesor" class="form-label">Apellido del Profesor</label>
-                            <input type="text" class="form-control" id="apellidoProfe" required>
+                            <input type="text" class="form-control" 
+                            name="apellidoProfe"
+                            id="apellidoProfe" required>
                         </div>
                     </div>
+
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="correoProfesor" class="form-label">Email del Profesor</label>
+                            <input type="text" class="form-control" 
+                            name="correoProfesor"
+                            id="correoProfesor" aria-describedby="" required>
+                        </div>
+                        <div class="col">
+                            <label for="telefonoProfesor" class="form-label">Telefono del Profesor</label>
+                            <input type="text" class="form-control" 
+                            name="telefonoProfe"
+                            id="telefonoProfe" required>
+                        </div>
+                    </div>
+
+                    <br>
 
                     <div class="row">
                         <div class="col">
-                            <label for="nombreAsignatura" class="form-label">Nombre de la Asignatura</label>
-                            <input type="text" class="form-control" id="asignatura" required>
-                        </div>
+                            <div class="form-floating">
+                                <select class="form-select" id="nombre_asignatura"
+                                name="nombre_asignatura" 
+                                        aria-label="Floating label select example">
+                                    
+                                    <option selected>Nombre de asignatura</option>
+                                    <option value="ProgramacionWeb"> Programacion Web </option>
+                                    <option value="DiseñoAplicaciones"> Diseño de aplicaciones </option>
+                                    <option value="EstructuraDatos"> Estructura de datos </option>
+                                    <option value="Redes"> Redes </option>
+                                </select>
+                                <label for="floatingSelect">Nombre de asignatura</label>
+                            </div>
+                        </div>                       
                         <div class="col">
-                            <label for="horarioCurso" class="form-label">Horario del Curso</label>
-                            <input type="text" class="form-control" id="horarioCurso" required>
+                            <div class="form-floating">
+                                <select class="form-select" id="horarioCurso" 
+                                name="horarioCurso" 
+                                        aria-label="Floating label select example">
+                                    
+                                    <option selected>Horario de clases</option>
+                                    <option value="Mañana">Mañana</option>
+                                    <option value="Tarde">Tarde</option>
+                                    <option value="Nocturno">Nocturno</option>
+                                </select>
+                                <label for="floatingSelect">Horario de clases</label>
+                            </div>
                         </div>
                     </div>
+                   
+                    <br>
 
-                    <div class="row">
-                        <div class="col">
-                            <label for="identificadorProfe" class="form-label">Identificador del Profesor</label>
-                            <input type="text" class="form-control" id="identificadorProfe" required>
-                        </div>
-                        
-                        <div class="col">
-                            <label for="telefProfesor" class="form-label">Telefono del Profesor</label>
-                            <input type="text" class="form-control" id="telefProfesor" required>
-                        </div>
-                    </div>
-                        
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" 
+                                name="observaciones"
+                                id="observaciones"></textarea>
+                                <label for="floatingTextarea">Comentarios/Observaciones</label>
+                            </div>
+                    <br>
 
-                            <input type="reset" class="btn btn-primary" value="Reset" />
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                        <input type="reset" class="btn btn-primary" value="Reset" />
                     
             </div>
 

@@ -39,8 +39,8 @@
                             class="dropdown-menu"
                             aria-labelledby="dropdownId"
                         >
-                            <a class="dropdown-item" href="registro_estudiante.php"
-                                >Registro Alumno</a
+                            <a class="dropdown-item" href="registro_estudiantes.php"
+                                >Registro de Estudiantes</a
                             >
                             <a class="dropdown-item" href="registro_profesor.php"
                                 >Registro Profesor</a

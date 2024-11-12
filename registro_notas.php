@@ -1,37 +1,32 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Registro Notas</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+<head>
+    <title>Registro Notas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/funciones.js"></script>
 
-        <script src="js/funciones.js"></script>
-
-    </head>
-
+</head>
     <body>
         <header>
             <?php include 'log/header.php';?>
             
         </header>
-
         <main>
 
-            <div class="container" style="margin-top: 50px; margin-left: 550px">
+            <div class="container" style="margin-top: 20px;">               
+                <h1 style="text-align:center">Registro de Notas</h1>
 
                 <button type="button" class="btn btn-primary">IFC2365</button>
                 <button type="button" class="btn btn-primary">IFC2366</button>
@@ -117,7 +112,6 @@
 
                     <input type="reset" class="btn btn-primary" value="Reset" />
 
-                    <!-- <button type="button" class="btn btn-primary" value="Reset"> Borrar </button>  -->
                 </div>
 
             </form>

@@ -1,6 +1,6 @@
 <div
     class="container-fluid"
-    style="background-color:brown;padding:30px; margin-top: 400px"
+    style="background-color:brown;padding:30px; margin-top: 20px"
 >
 
 <!-- Button trigger modal -->

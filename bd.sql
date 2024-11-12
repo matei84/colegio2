@@ -3,6 +3,30 @@ CREATE DATABASE instituto;
 
 use instituto;
 
+CREATE TABLE registro_profesor (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(15) NOT NULL,
+    apellido VARCHAR(15) NOT NULL,
+    correo_electronico VARCHAR(20) NOT NULL,
+    telefono VARCHAR(9) NOT NULL,
+    asignatura VARCHAR(30) NOT NULL, -- Para mejorar cambiar el tipò de dato a ENUM
+    horario VARCHAR(15) NOT NULL, -- Para mejorar cambiar el tipò de dato a ENUM
+    observaciones VARCHAR(30)
+     
+);
+
+CREATE TABLE registro_estudiante (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(15) NOT NULL,
+    apellido VARCHAR(15) NOT NULL,
+    identificacion VARCHAR(15) NOT NULL,
+    correo_electronico VARCHAR(20) NOT NULL,
+    asignatura VARCHAR(30) NOT NULL, -- Para mejorar cambiar el tipò de dato a ENUM
+    horario VARCHAR(15) NOT NULL, -- Para mejorar cambiar el tipò de dato a ENUM
+    modalidad_clases VARCHAR(12) NOT NULL,
+    observaciones VARCHAR(30)
+     
+);
 CREATE TABLE alumnos_nota (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(30) NOT NULL,
