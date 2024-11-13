@@ -31,17 +31,13 @@
 
             <div class="container d-flex justify-content-center" style="border 2px solid black; border-radius 20px">
 
-            <form action="" name="login_form" method="post">
+            <!-- <form action="" name="login_form" method="post"> -->
+            
+            <form action="comprueba_login.php" name="login_form" method="post">
 
                 <div class="mb-3">
                     <label for="" class="form-label" style="color: white;" > Usuario </label>
-                    <input
-                        type="text"
-                        class="form-control"
-                        name="usuario"
-                        id="usuario"
-                        aria-describedby="helpId"
-                        placeholder=""
+                    <input type="text" class="form-control" name="usuario" id="usuario" aria-describedby="helpId" placeholder=""
                         style="width:300px"
                     />
 
@@ -49,13 +45,7 @@
             
                 <div class="mb-3">
                     <label for="" class="form-label" style="color: white;" >Clave</label>
-                    <input
-                        type="text"
-                        class="form-control"
-                        name="password"
-                        id="password"
-                        aria-describedby="helpId"
-                        placeholder=""
+                    <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId" placeholder=""
                     />
     
                 </div>
@@ -65,8 +55,9 @@
                 
                 </div>
                 
-                <button type="button" class="btn btn-danger" onclick="return Login(this.form)"> Entrar </button>
+                <!-- <button type="button" class="btn btn-danger" onclick="return Login(this.form)"> Entrar </button> -->
                                 
+                <input type="submit" value="Entrar" class="btn btn-danger" />
                 <input type="reset" value="Borrar" class="btn btn-danger" />
 
             </form>

@@ -48,7 +48,7 @@
                         </div>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
                             href="#"
@@ -69,7 +69,7 @@
                                 >Action 2</a
                             >
                         </div>
-                    </li>
+                    </li> -->
 
                     <li class="nav-item dropdown">
                         <a
@@ -81,20 +81,22 @@
                             aria-expanded="false"
                             >Administracion</a
                         >
+
                         <div
                             class="dropdown-menu"
                             aria-labelledby="dropdownId"
                         >
-                            <a class="dropdown-item" href="libroDConta.php"
-                                >Libro diario Contable</a
-                            >
                             <a class="dropdown-item" href="facturacion.php"
                                 >Facturacion</a
                             >
+                            <a class="dropdown-item" href="libroDConta.php"
+                                >Libro Diario</a
+                            >
+                            
                         </div>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
                             href="#"
@@ -115,7 +117,7 @@
                                 >Action 2</a
                             >
                         </div>
-                    </li>
+                    </li> -->
 
 
 

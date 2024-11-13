@@ -85,6 +85,7 @@
         <div style="margin-top:15px">
             <button type="button" class="btn btn-primary" onclick="addProduct()">Presupuesto</button>
             <button type="button" class="btn btn-primary" onclick="window.print()">Imprimir</button>
+            <a href="inicio.php"><input type="button" class="btn btn-primary" value="Inicio"></a>
 
         </div>
 

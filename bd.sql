@@ -45,14 +45,6 @@ CREATE TABLE contabilidadInstituto (
     haber VARCHAR(20) NOT NULL
 );
 
--- INSERT INTO usuarios (id, nombre, email, fecha_registro) 
--- VALUES (NULL, "Juan", "juan@ejemplo.com", NOW()); CURDATE()
-
-
-
-
-
-
 
 select *
 FROM alumnos_notas;

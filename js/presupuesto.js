@@ -162,7 +162,6 @@ function addAccountingEntry() {
                         placeholder="ID"  value="$${haber}" required></td>
         `;
 
-        updateTotal(); // Actualiza el total al añadir un nuevo producto
     } else {
         alert("Por favor, asegúrese de ingresar datos válidos.");
     }

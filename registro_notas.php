@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,7 +24,19 @@
 </head>
     <body>
         <header>
-            <?php include 'log/header.php';?>
+            <?php
+                    // Mostrar un encabezado diferente según el usuario
+                    if ($_SESSION['user_id'] === "admin") {
+                        include 'log/header.php';
+                    } elseif ($_SESSION['user_id'] === "profe") {
+                        include 'log/headerProfesores.php';
+
+                    } elseif ($_SESSION['user_id'] === "secretaria") {
+                        include 'log/headerSecretaria.php';
+                    }else {
+                    echo "Este es un mensaje general. Mensaje por default";
+                    }
+            ?>
             
         </header>
         <main>
@@ -34,7 +50,7 @@
 
             </div> 
 
-            <form action="insertar_notas.php" method="post">
+            <form action="insertarBD/insertar_notas.php" method="post">
         
                 <div class="container" style="margin-top: 50px; border:2px solid black;">
                 
